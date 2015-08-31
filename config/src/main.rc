@@ -1,0 +1,202 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 327, 201
+STYLE DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "AVR TNC Setup Tool"
+MENU IDR_MENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "AVR TNC Parameters Setup Tool",IDC_STATIC,107,7,106,8
+    GROUPBOX        "Communication setup",IDC_STATIC,23,26,139,138
+    LTEXT           "Port",IDC_STATIC,44,47,14,8
+    CONTROL         "Store new UART rate",IDC_SET_NEW_RATE,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,64,131,85,9
+    CTEXT           "Current Port Settings",IDC_PORT_SETTINGS,23,150,135,8
+    COMBOBOX        IDC_RATE,65,66,86,87,CBS_DROPDOWN | CBS_UPPERCASE | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Rate",IDC_STATIC,43,70,16,8
+    GROUPBOX        "AX.25 channel access",IDC_STATIC,167,26,137,138
+    EDITTEXT        IDC_TXDELAY,224,46,59,12,ES_RIGHT | ES_LOWERCASE
+    CONTROL         "",IDC_SET_TXDELAY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    288,47,12,10
+    LTEXT           "TX Delay",IDC_STATIC,186,47,30,8
+    EDITTEXT        IDC_TXTAIL,224,66,59,12,ES_RIGHT | ES_LOWERCASE | 
+                    WS_DISABLED
+    CONTROL         "",IDC_SET_TXTAIL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    288,70,12,10
+    LTEXT           "TX Tail",IDC_STATIC,194,70,24,8
+    EDITTEXT        IDC_PERSIST,224,87,59,12,ES_RIGHT | ES_LOWERCASE | 
+                    WS_DISABLED
+    CONTROL         "",IDC_SET_PERSIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    288,90,12,10
+    LTEXT           "p - Persistence",IDC_STATIC,170,87,49,8
+    EDITTEXT        IDC_SLOTTIME,224,111,59,12,ES_RIGHT | ES_LOWERCASE | 
+                    WS_DISABLED
+    CONTROL         "",IDC_SET_SLOTTIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,288,111,12,10
+    LTEXT           "Slot time",IDC_STATIC,186,111,28,8
+    LTEXT           "all values are scaled to 0...255",IDC_STATIC,193,150,96,
+                    8
+    PUSHBUTTON      "Transmit KISS frame",IDC_TRANSMIT_KISS,24,173,71,19
+    PUSHBUTTON      "Set values",IDC_SET_VALUES,99,173,64,19
+    PUSHBUTTON      "Get values",IDC_GET_VALUES,168,173,67,19,WS_DISABLED
+    DEFPUSHBUTTON   "Exit",IDC_EXIT,239,173,65,19
+    COMBOBOX        IDC_NEW_RATE,66,87,86,87,CBS_DROPDOWN | CBS_UPPERCASE | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "New Rate",IDC_STATIC,29,87,33,8
+    COMBOBOX        IDC_PORT,64,46,86,87,CBS_DROPDOWNLIST | WS_TABSTOP
+    CONTROL         "Store in EEPROM",IDC_SET_IN_EEPROM,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,223,131,73,9
+END
+
+IDD_ABOUT DIALOGEX 70, 30, 208, 127
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_OK,122,106,50,14
+    CONTROL         106,IDC_STATIC,"Static",SS_BITMAP,7,7,79,106
+    LTEXT           "AVR KISS TNC SETUP TOOL",IDC_STATIC,97,16,98,8
+    LTEXT           "Version 0.0.2  20.08.2006",IDC_STATIC,104,27,82,8
+    LTEXT           "Copyright (c) 2006 UR4MCK",IDC_STATIC,99,40,90,8
+    LTEXT           "This program is FREEWARE",IDC_STATIC,101,56,91,8
+    LTEXT           "See updates at",IDC_STATIC,121,72,49,8
+    LTEXT           "http://daemon.co.ua/projects",IDC_STATIC,101,82,95,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Exit",                        IDC_EXIT
+    END
+    POPUP "Action"
+    BEGIN
+        MENUITEM "Transmit KISS frame",         IDC_TRANSMIT_KISS
+        MENUITEM "Set Values",                  IDC_SET_VALUES
+        MENUITEM "Get Values",                  IDC_GET_VALUES, GRAYED
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       IDC_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP              BITMAP  DISCARDABLE     "logo_small.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "Support.ico"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
