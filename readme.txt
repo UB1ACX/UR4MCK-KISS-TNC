@@ -1,3 +1,16 @@
+Added adjusted scheme and trace in format PCAD2002.
+scheme\PCAD2002\TNC.sch
+scheme\PCAD2002\TNC.pcb
+scheme\PCAD2002\TNC.lib
+scheme\PCAD2002\TNC Ý3.pdf	- scheme in pdf
+scheme\PCAD2002\pcb.jpg - trace (print-screen)
+
+- in the original scheme replaced the microcontroller housing (PDIP28 -> TQFP32)
+- added in-circuit programming connector X5
+- added push-button "RESET"
+- Added protection for the power supply and input signal PTT
+- formalized connectors external connections (CWF-*)
+
 avr_tnc.zip contents:
 
 config\avrtnc_setup.exe			- AVR TNC setup program
