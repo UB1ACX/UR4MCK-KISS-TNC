@@ -1,3 +1,11 @@
+27.10.2015
+Adjusted input (C7...C9, C11, R3, R4, R7, D3) and output (C27, C28) filters.
+Modified files:
+scheme\PCAD2002\TNC.sch
+scheme\PCAD2002\TNC щ3.pdf	- scheme in pdf
+scheme\PCAD2002\TNC ощ3.pdf	- BOM in pdf
+
+
 Added adjusted scheme and trace in format PCAD2002.
 scheme\PCAD2002\TNC.sch
 scheme\PCAD2002\TNC.pcb
